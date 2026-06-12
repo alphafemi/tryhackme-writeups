@@ -1,26 +1,6 @@
 # Offensive Security — Overview
 
-> **Topic:** Introduction to Offensive Security  
-> Covers: What offensive security is, key concepts, common techniques, roles, and how it relates to defensive security
 
----
-
-## Table of Contents
-
-1. [What Is Offensive Security?](#what-is-offensive-security)
-2. [The Offensive Security Mindset](#the-offensive-security-mindset)
-3. [Key Concepts](#key-concepts)
-   - [Penetration Testing](#penetration-testing)
-   - [Red Teaming](#red-teaming)
-   - [Vulnerability Research](#vulnerability-research)
-   - [Social Engineering](#social-engineering)
-4. [Common Offensive Techniques](#common-offensive-techniques)
-5. [Offensive Security Roles](#offensive-security-roles)
-6. [Offensive vs. Defensive Security](#offensive-vs-defensive-security)
-7. [Rules of Engagement & Ethics](#rules-of-engagement--ethics)
-8. [Key Takeaways](#key-takeaways)
-
----
 
 ## What Is Offensive Security?
 
@@ -185,21 +165,4 @@ Offensive security is only legitimate when properly **authorised**. Without writ
 
 ---
 
-## Key Takeaways
 
-| Topic | Key Point |
-|---|---|
-| Offensive security | Authorised, simulated attacks to find vulnerabilities before real attackers |
-| Penetration testing | Structured attack simulation: recon → scan → exploit → report |
-| Black / grey / white box | Different levels of prior knowledge given to the tester |
-| Red teaming | Full attack simulation over extended period; tests tech, people, and process |
-| Zero-day | Unknown vulnerability with no available patch |
-| Social engineering | Attacks targeting people, not just technology; phishing is most common |
-| Privilege escalation | Going from limited to admin access after initial compromise |
-| Lateral movement | Moving through a network after gaining an initial foothold |
-| Authorisation | Offensive techniques are legal only with written permission |
-| Offensive + defensive | Both are needed — offensive finds gaps, defensive closes and monitors them |
-
----
-
-> 📚 This document is part of a defensive security study series. Understanding offensive techniques is essential for defenders — you cannot protect against what you do not understand.
