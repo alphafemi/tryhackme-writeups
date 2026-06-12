@@ -1,21 +1,6 @@
 # Defensive Security — Overview
 
-> **Topic:** Introduction to Defensive Security  
-> Covers: Key defensive security areas, SOC team roles and responsibilities
 
----
-
-## Table of Contents
-
-1. [What Is Defensive Security?](#what-is-defensive-security)
-2. [Key Areas of Defensive Security](#key-areas-of-defensive-security)
-   - [Monitoring and Detecting](#monitoring-and-detecting)
-   - [Incident Response](#incident-response)
-   - [Threat Intelligence](#threat-intelligence)
-   - [Vulnerability Management](#vulnerability-management)
-   - [Investigation and Analysis](#investigation-and-analysis)
-3. [The Defensive Security Team](#the-defensive-security-team)
-4. [Key Takeaways](#key-takeaways)
 
 ---
 
@@ -105,7 +90,7 @@ Think of it as solving a puzzle: assembling small pieces of information into a c
 
 A defensive security team is made up of specialised roles that each contribute a distinct function.
 
-### Bob — SOC Analyst
+###  — SOC Analyst
 
 **Role:** Security Operations Centre (SOC) Analyst
 
@@ -118,7 +103,7 @@ A defensive security team is made up of specialised roles that each contribute a
 
 ---
 
-### Aaliyah — Incident Responder
+###  — Incident Responder
 
 **Role:** Incident Responder
 
@@ -131,7 +116,7 @@ A defensive security team is made up of specialised roles that each contribute a
 
 ---
 
-### Zoe — Security Engineer
+###  — Security Engineer
 
 **Role:** Security Engineer
 
@@ -143,7 +128,7 @@ A defensive security team is made up of specialised roles that each contribute a
 
 ---
 
-### Bill — Digital Forensics
+###  — Digital Forensics
 
 **Role:** Digital Forensics Analyst
 
@@ -154,22 +139,3 @@ A defensive security team is made up of specialised roles that each contribute a
 
 > Digital forensics is like detective work — finding and interpreting the digital footprints left behind by an attacker.
 
----
-
-## Key Takeaways
-
-| Topic | Key Point |
-|---|---|
-| Monitoring & Detection | Continuous observation; catch threats early |
-| Incident Response | Contain → eradicate → recover → learn |
-| Threat Intelligence | Know your attacker's methods before they attack you |
-| Vulnerability Management | Fix weaknesses before attackers exploit them |
-| Investigation & Analysis | Separate normal from suspicious; build the full picture |
-| SOC Analyst | Frontline monitoring; first to spot issues |
-| Incident Responder | Active threat response; real-time containment |
-| Security Engineer | Builds and maintains team tools and systems |
-| Digital Forensics | Post-incident evidence gathering and analysis |
-
----
-
-> 📚 This document is part of a defensive security study series covering SOC operations, incident response, threat intelligence, and forensics.
