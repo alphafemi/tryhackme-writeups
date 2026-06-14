@@ -2,7 +2,7 @@
 
 # 🔐 TryHackMe Write-ups
 
-![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/alphafemi.png)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Alphafemi-red?plastic&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/Alphafemi)
 
 ## About
 My  write-ups and notes from TryHackMe rooms.
