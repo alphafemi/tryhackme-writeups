@@ -312,4 +312,4 @@ The DHCP server confirms and finalises:
 ### Key Takeaway
 > DHCP makes network management effortless — instead of manually assigning IP addresses to every device, the DHCP server handles it all **automatically**, making it the most common method used in homes, schools, and businesses.
 
-Would you like to move on to the **OSI Model**, **DNS**, or another networking topic?
+
