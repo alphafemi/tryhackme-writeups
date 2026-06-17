@@ -150,4 +150,4 @@ Layer 1 [Binary electrical signals] ──► Layer 1 [Binary signals]
 
 ---
 
-Would you like all topics from **LAN Topologies to the OSI Model** compiled into one full document, or shall we continue with more topics like **DNS** or **Packets & Frames**?
+
