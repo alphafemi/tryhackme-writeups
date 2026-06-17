@@ -1,5 +1,5 @@
 ## What Is a Network?
- <img width="560" height="475" alt="image" src="https://github.com/user-attachments/assets/bb2e4eff-60fd-4925-870b-3ba83f96f29e" />
+
 
 A **network** is two or more devices connected together so they can communicate and share resources. Networks can be as small as two computers in a home or as large as the global internet.
 
