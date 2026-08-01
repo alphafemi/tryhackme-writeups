@@ -1,8 +1,6 @@
 # JavaScript Fundamentals for Web Security
  
-## Overview
- 
-This document covers JavaScript core language concepts (variables, data types, functions, loops, conditionals), how JS integrates into HTML (internal vs. external), user interaction functions and how attackers can weaponize them, minification and obfuscation, and security best practices for writing and reviewing client-side JavaScript.
+
  
 ---
  
