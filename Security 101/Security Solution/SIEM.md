@@ -149,9 +149,3 @@ Analysts spend most of their time in SIEM dashboards, which summarize key networ
 - **Detection rules** are logical expressions built on normalized fields (e.g., Windows Event ID `104` for log clearing, or `4688` combined with a process name for command execution) that trigger alerts when satisfied.
 - When an alert fires, analysts examine the underlying events, confirm which rule conditions matched, and classify the result as a **false positive** (tune the rule) or a **true positive** (investigate, contain, and escalate).
 
-## Related Documents
-
-- [54. Security Operations Center (SOC) Fundamentals](./54-security-operations-center-soc-fundamentals.md)
-- [56. Incident Response Fundamentals](./56-incident-response-fundamentals.md)
-- [57. Log Analysis Fundamentals](./57-log-analysis-fundamentals.md)
-- [59. Firewall Fundamentals](./59-firewall-fundamentals.md)
