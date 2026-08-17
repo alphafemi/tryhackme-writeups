@@ -158,8 +158,3 @@ To                         Action      From
 - **Windows Defender Firewall** applies different default behavior per **network profile** (Private vs. Public/Guest), determined automatically via Network Location Awareness, and supports fully custom inbound/outbound rules.
 - Linux firewall capability is built on the **Netfilter** kernel framework, exposed through utilities like **iptables**, **nftables**, **firewalld**, and the beginner-friendly **ufw**, which wraps iptables with simplified commands.
 
-## Related Documents
-
-- [58. SIEM Fundamentals](./58-siem-fundamentals.md)
-- [60. Intrusion Detection Systems (IDS) & Snort](./60-intrusion-detection-systems-ids-snort.md)
-- [9. Port Forwarding, Firewalls, VPNs, Routers & Switches](./09-port-forwarding-firewalls-vpns-routers-switches.md)
