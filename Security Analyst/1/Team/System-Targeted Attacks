@@ -1,0 +1,135 @@
+# System-Targeted Attacks
+
+
+
+Even a perfectly trained "gatekeeper" (a security-aware employee) can't compensate for a fragile lock on the front gate. Threat actors can attack **insecure systems directly**, often without any user involvement at all.
+
+---
+
+### What Is a "System"?
+
+A system is anywhere data lives — a physical server, a lab machine, or a cloud platform (e.g., Microsoft 365). Its value to an attacker scales with what it controls:
+
+| Breached System | Attack Value |
+|---|---|
+| A student's personal laptop | Steal gaming profiles, add PC to a botnet |
+| A bank's senior IT admin's laptop | Access to internal banking systems |
+| A law firm's mail server | Dump all mailboxes, blackmail victims |
+| A server at the core of an industrial network | Ransomware the whole network |
+| A government website's management panel | Deface the site (activism/damage) |
+
+> **Scale matters:** Breaching one mailbox via phishing compromises one account; breaching the mail server compromises *every* mailbox it hosts.
+
+---
+
+### How Systems Get Attacked
+
+#### 1. Human-Led Attacks
+
+System users themselves often trigger the breach — inserting a malicious USB found in public, downloading malware from pirated sources, or reusing a weak password.
+
+> **81% of breaches involve stolen or compromised passwords.** Devices like a "RubberDucky" (a USB that auto-runs malicious commands) exploit this same human-in-the-loop weakness.
+
+#### 2. Vulnerabilities
+
+Every piece of software can contain security flaws. In 2024 alone, **40,000+** vulnerabilities were published, with **300+** actively exploited in major attacks. Weak passwords and unrestricted access set by IT administrators compound the risk.
+
+#### 3. Supply Chain Attacks
+
+Every application depends on countless third-party libraries. If an attacker compromises one library or app and pushes a malicious update, **every downstream user** is compromised simultaneously.
+
+> **Notable examples:** SolarWinds and 3CX — both affected thousands of companies through compromised software updates. Even TryHackMe was affected via **Lottie Player**, a library used for room animations.
+
+Supply chain attacks are especially hard to defend against because organizations can't fully control every dependency in their software stack.
+
+---
+
+### Software Vulnerabilities in Depth
+
+Some flaws take years — or decades — to surface. **Shellshock**, a major Linux vulnerability, existed from 1992 but wasn't discovered until 2014. When attackers find a flaw before defenders do, it's called a **zero-day**.
+
+Once publicly disclosed, a vulnerability gets a **CVE** number — starting a race between attackers building exploits and defenders patching systems.
+
+**Notable Windows CVE timeline examples:**
+
+| Year | Vulnerability |
+|---|---|
+| 2017 | EternalBlue |
+| 2021 | PrintNightmare |
+| 2022 | Follina |
+| *(ongoing)* | New critical CVEs emerge every year |
+
+#### Responding to Vulnerabilities
+
+The permanent fix is always a **patch** from the vendor. While waiting (especially for zero-days), stopgap measures include:
+
+- Restricting system access to trusted IPs
+- Applying vendor-provided temporary mitigations
+- Blocking known attack patterns via IPS or WAF
+
+---
+
+### Misconfigurations
+
+Unlike vulnerabilities, a **misconfiguration** isn't a software bug — it's a setup mistake, often made for convenience (e.g., a simple password instead of a strong one).
+
+**Real-world examples:**
+
+- A weak `"123456"` password exposed chat logs for **64 million** McDonald's job applicants
+- A misconfigured AWS setup led to a breach of **106 million** bank customers
+- Improperly configured smart fridges were silently recruited into botnet attacks
+
+**Typical breach chain:** IT admin sets a weak password → exposes the database to the internet → database gets breached within days.
+
+#### Responding to Misconfigurations
+
+Misconfigurations don't need a patch — they need a **better setup**. Proactive responses include:
+
+| Measure | Description |
+|---|---|
+| **Penetration Testing** | Hiring ethical hackers to simulate attacks and report flaws |
+| **Vulnerability Scans** | Periodic scans to catch default passwords or outdated software |
+| **Configuration Audits** | Manual review against best-practice benchmarks (e.g., CIS Benchmarks) |
+
+---
+
+### Applying Equal Effort: Humans and Systems
+
+Attackers are opportunists — they don't distinguish between "human hacking" and "system hacking," they just take the easiest path. Defense must therefore combine **Mitigation** and **Detection** for both.
+
+Since systems can't be "trained" the way humans can, system-focused mitigation instead centers on **IT process and configuration discipline**:
+
+| Mitigation | Description |
+|---|---|
+| **Patch Management** | Tracking and patching vulnerable systems significantly reduces successful attacks |
+| **Training for IT** | IT staff aware of misconfiguration risks are less likely to leave systems exposed |
+| **Network Protection** | Restricting access to trusted people/IPs makes systems much harder to breach |
+| **Antivirus Protection** | Stops or detects many attack types, just as with human-targeted threats |
+
+---
+
+### System-Targeted Attacks Quick Reference
+
+| Concept | Summary |
+|---|---|
+| System = | Any server, machine, or platform holding data |
+| Attack scale | Value scales with what the system controls (one mailbox vs. the whole mail server) |
+| 3 main attack vectors | Human-led attacks, Vulnerabilities, Supply chain attacks |
+| Password stat | 81% of breaches involve stolen/compromised passwords |
+| Zero-day | A vulnerability exploited before it's publicly known/patched |
+| CVE | Public identifier assigned once a vulnerability is disclosed |
+| Vulnerability fix | A vendor-issued patch |
+| Misconfiguration fix | Correct setup, not a patch |
+| Proactive misconfig defenses | Pentesting, vulnerability scans, configuration audits |
+| Key mitigations | Patch management, IT training, network protection, antivirus |
+
+---
+
+## Summary
+
+- A **system** is anywhere data lives — its value to an attacker scales with what it controls, from a single laptop up to a mail server or industrial network core.
+- Systems get attacked through three main vectors: **human-led attacks** (weak passwords, malicious USBs — 81% of breaches involve stolen/compromised passwords), **vulnerabilities** (40,000+ published in 2024 alone), and **supply chain attacks** (compromising a shared dependency to hit every downstream user at once, as with SolarWinds, 3CX, and Lottie Player).
+- A **vulnerability** is a software flaw — sometimes dormant for years (Shellshock, 1992–2014) — that becomes a **zero-day** if exploited before disclosure, and gets a **CVE** number once publicly known; the only permanent fix is a vendor **patch**, with interim mitigations like IP restriction, vendor guidance, and IPS/WAF blocking in the meantime.
+- A **misconfiguration** is a setup mistake, not a bug — fixed through better configuration rather than a patch, and best caught proactively via **penetration testing, vulnerability scans,** and **configuration audits** (e.g., against CIS Benchmarks).
+- Since attackers take whichever path is easiest, effective defense treats human- and system-targeted risk with equal weight, applying **patch management, IT training, network protection,** and **antivirus** as the core system-side mitigations.
+
