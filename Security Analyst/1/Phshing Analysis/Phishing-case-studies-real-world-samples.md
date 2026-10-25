@@ -137,9 +137,3 @@ Email → "Download Document Here" button
 - **Malicious attachments:** a fake Netflix notice carries a **PDF** with a link to a non-Netflix domain; a fake Apple notice uses **BCC** to hide its target list plus a blank body and an unusual `.dot` file; and a fake DHL notice carries an **Excel** file with geographic inconsistencies (German sender, Indian recipient city, Mandarin text) whose link attempts to run `regasms.exe`, which could lead to persistence, data exfiltration, or ransomware.
 - Safe investigation relies on **raw source inspection** and **URL expanders** (like WhereGoes) to reveal true destinations without ever interacting directly with suspicious links, IPs, or attachments.
 
-## Related Documents
-
-- [81. Email Structure, Protocols & Phishing Analysis](./81-email-structure-protocols-phishing-analysis.md)
-- [67. Social Engineering & Human-Targeted Attacks](./67-social-engineering-human-targeted-attacks.md)
-- [83. Phishing Analysis Tools & PhishTool](./83-phishing-analysis-tools-phishtool.md)
-- [77. Pyramid of Pain & Indicators of Compromise](./77-pyramid-of-pain-indicators-of-compromise.md)
