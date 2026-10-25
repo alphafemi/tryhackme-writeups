@@ -169,9 +169,4 @@ This keeps the reference readable for analysis while making it non-clickable/non
 - Malicious email types include **spam/malspam, phishing, spear phishing, whaling, smishing,** and **vishing**, and phishing emails commonly show seven red flags: a spoofed sender, urgent messaging, brand impersonation, grammar issues, generic greetings, hidden/shortened links, and malicious attachments.
 - Always **defang** suspicious URLs, IPs, and emails (e.g., `hxxp[://]www[.]suspiciousdomain[.]com`) before sharing or analyzing them, so they can't be clicked or resolved by accident.
 
-## Related Documents
 
-- [67. Social Engineering & Human-Targeted Attacks](./67-social-engineering-human-targeted-attacks.md)
-- [38. Application Layer Protocols — DNS, HTTP, FTP, SMTP, POP3 & IMAP](./38-application-layer-protocols-dns-http-ftp-smtp-pop3-imap.md)
-- [62. CyberChef Fundamentals](./62-cyberchef-fundamentals.md)
-- [82. Phishing Case Studies — Real-World Samples](./82-phishing-case-studies-real-world-samples.md)
