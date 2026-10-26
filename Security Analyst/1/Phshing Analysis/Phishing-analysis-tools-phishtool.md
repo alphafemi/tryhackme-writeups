@@ -151,9 +151,3 @@ This mirrors real SOC documentation and case-closure practices.
 - Attachments must only ever be opened in a **sandbox or lab environment**; generating a `sha256sum` hash lets analysts check them against **VirusTotal** or **Talos**, while sandboxes like **ANY.RUN, Hybrid Analysis,** and **JOESandbox** detonate files safely and surface contacted URLs, downloaded payloads, and other IOCs.
 - **PhishTool** consolidates the whole workflow in one interface — artifact extraction with rendered/raw HTML and message-source views, **Authentication, Transmission, URL Analysis** (with VirusTotal integration), and **Attachments** tabs, and a case-resolution flow (classify, flag artifacts, add notes, resolve) that mirrors real SOC documentation practice.
 
-## Related Documents
-
-- [81. Email Structure, Protocols & Phishing Analysis](./81-email-structure-protocols-phishing-analysis.md)
-- [82. Phishing Case Studies — Real-World Samples](./82-phishing-case-studies-real-world-samples.md)
-- [84. Email Authentication (SPF, DKIM, DMARC) & Phishing Defenses](./84-email-authentication-spf-dkim-dmarc-phishing-defenses.md)
-- [62. CyberChef Fundamentals](./62-cyberchef-fundamentals.md)
