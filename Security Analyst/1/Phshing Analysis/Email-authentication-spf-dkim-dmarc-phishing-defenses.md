@@ -165,9 +165,4 @@ Since some phishing inevitably reaches inboxes, human-facing defenses matter too
 - **S/MIME** adds digitally signed and encrypted messages built on public key cryptography — the signature provides authentication, non-repudiation, and integrity, while encryption provides confidentiality.
 - Beyond authentication, defense layers **technical controls** (email filtering, secure email gateways, link rewriting, sandboxing) with **user-facing measures** (warning banners, in-email reporting, awareness training, and phishing simulations) since some phishing will always reach inboxes.
 
-## Related Documents
 
-- [83. Phishing Analysis Tools & PhishTool](./83-phishing-analysis-tools-phishtool.md)
-- [81. Email Structure, Protocols & Phishing Analysis](./81-email-structure-protocols-phishing-analysis.md)
-- [45. Public Key Cryptography — RSA, Diffie-Hellman, SSH & Digital Signatures](./45-public-key-cryptography-rsa-diffie-hellman-ssh-digital-signatures.md)
-- [85. Network Traffic Analysis (NTA) Fundamentals](./85-network-traffic-analysis-nta-fundamentals.md)
