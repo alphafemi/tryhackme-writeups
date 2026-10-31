@@ -348,9 +348,3 @@ Wireshark can generate ready-to-implement firewall rules directly from observed 
 - **Cleartext analysis** covers FTP (response codes 230/530 and `USER`/`PASS` commands for brute-force and spray detection) and HTTP (methods, response codes, URI and host filters, User-Agent red flags like inconsistency, typos, or tool signatures from Nmap, Nikto, Wfuzz, and sqlmap, and Log4j indicators such as a POST with `jndi:ldap` and `Exploit.class`).
 - **HTTPS traffic** can be decrypted only if an `SSLKEYLOGFILE` was set up **before** the capture, and two bonus features round out the toolkit: `Tools → Credentials` (extracts cleartext credentials from FTP, HTTP, IMAP, POP, and SMTP) and `Tools → Firewall ACL Rules` (generates ready-to-use rules for iptables, Cisco IOS, ipfilter, ipfw, pf, and Windows Firewall).
 
-## Related Documents
-
-- [87. Wireshark Statistics & Advanced Filtering](./87-wireshark-statistics-advanced-filtering.md)
-- [89. NetworkMiner — Network Forensic Analysis Tool](./89-networkminer-network-forensic-analysis-tool.md)
-- [42. Nmap — Network Scanning & Enumeration](./42-nmap-network-scanning-enumeration.md)
-- [85. Network Traffic Analysis (NTA) Fundamentals](./85-network-traffic-analysis-nta-fundamentals.md)
