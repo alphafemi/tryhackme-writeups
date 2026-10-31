@@ -190,9 +190,3 @@ Wireshark's most powerful feature — supports ~3,000 protocols for granular, fi
 - Protocol-specific filters target IP (`ip.addr`, `ip.src`, `ip.dst`), TCP/UDP (`tcp.port`, `udp.srcport`, `tcp.dstport`, etc.), and HTTP/DNS (`http.request.method == "GET"`, `http.response.code == 200`, `dns.flags.response`, `dns.qry.type`), with `Analyse → Display Filter Expression` as a built-in field reference.
 - Advanced operators and functions — **`contains`** (case-sensitive), **`matches`** (case-insensitive regex), **`in`** (set membership), and **`upper()`**, **`lower()`**, **`string()`** — enable more precise matching, while **filter bookmarks, filter buttons,** and **configuration profiles** save time reusing filters and settings across investigations.
 
-## Related Documents
-
-- [86. Wireshark Fundamentals](./86-wireshark-fundamentals.md)
-- [88. Wireshark Traffic Analysis — Scans, ARP Poisoning, Tunneling & Cleartext Protocols](./88-wireshark-traffic-analysis-scans-arp-poisoning-tunneling-cleartext-protocols.md)
-- [40. Wireshark — Packet Analysis](./40-wireshark-packet-analysis.md)
-- [85. Network Traffic Analysis (NTA) Fundamentals](./85-network-traffic-analysis-nta-fundamentals.md)
