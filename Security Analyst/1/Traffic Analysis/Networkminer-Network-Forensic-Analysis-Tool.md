@@ -151,9 +151,3 @@ Of the three network forensics data types (**Live Traffic, Traffic Captures, Log
 - The interface centers on a **Case Panel** of loaded PCAPs and tabs for **Hosts, Sessions, DNS, Credentials** (exportable to Hashcat or John the Ripper), **Files, Images, Parameters, Keywords** (case files must be reloaded after adding new keywords), **Messages**, and **Anomalies** (limited pattern flags like EternalBlue and spoofing — it is not a full IDS).
 - **Version 2.7+** adds MAC address correlation and richer parameter capture, while **v1.6** retains detailed packet and frame views and a unified cleartext tab.
 
-## Related Documents
-
-- [88. Wireshark Traffic Analysis — Scans, ARP Poisoning, Tunneling & Cleartext Protocols](./88-wireshark-traffic-analysis-scans-arp-poisoning-tunneling-cleartext-protocols.md)
-- [90. Network Perimeter Monitoring & Log Investigation](./90-network-perimeter-monitoring-log-investigation.md)
-- [85. Network Traffic Analysis (NTA) Fundamentals](./85-network-traffic-analysis-nta-fundamentals.md)
-- [47. John the Ripper — Hash Cracking in Practice](./47-john-the-ripper-hash-cracking-in-practice.md)
