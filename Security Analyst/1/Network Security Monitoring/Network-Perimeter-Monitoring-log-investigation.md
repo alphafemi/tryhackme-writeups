@@ -262,10 +262,3 @@ This mirrors the **Cyber Kill Chain** (Section 78) almost exactly — demonstrat
 - Pattern recognition drives triage: **one source to many destinations** suggests scanning, **one source to one destination repeatedly** suggests brute-forcing, **perfectly regular intervals** suggest malware beaconing, and an **IDS alert that explains why it fired** is more valuable than a plain firewall block.
 - A worked five-stage investigation using `grep`, `cut`, `sort`, and `uniq -c` on firewall, IDS, and VPN logs reconstructs a full chain — **reconnaissance → VPN brute-force → lateral movement → C2 beaconing → data exfiltration** — mirroring the Cyber Kill Chain, and in practice a SIEM like Splunk handles logs this large more efficiently with the same filter → pivot → correlate → confirm logic.
 
-## Related Documents
-
-- [89. NetworkMiner — Network Forensic Analysis Tool](./89-networkminer-network-forensic-analysis-tool.md)
-- [91. Network Discovery & Port Scanning Detection](./91-network-discovery-port-scanning-detection.md)
-- [78. The Cyber Kill Chain](./78-the-cyber-kill-chain.md)
-- [59. Firewall Fundamentals](./59-firewall-fundamentals.md)
-- [58. SIEM Fundamentals](./58-siem-fundamentals.md)
