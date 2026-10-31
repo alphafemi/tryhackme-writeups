@@ -237,10 +237,4 @@ Most modern NGFWs, IPS, and IDS support NetFlow/IPFIX natively — no dedicated 
 - When logs aren't enough, **full packet capture** is done with a physical **network TAP** (near-zero performance impact, link layer only) or software **port mirroring/SPAN**, with placement and storage as key considerations — a fully saturated 1 Gbps link needs roughly 10.8 TB per day — analyzed with Wireshark, TCPdump, or IDS/IPS tools like Snort, Suricata, and Zeek.
 - **NetFlow** (Cisco) and **IPFIX** (its vendor-neutral successor) capture traffic **metadata** instead of full packets, making them a lighter-weight way to spot C2 traffic, exfiltration, and lateral movement, and most modern NGFWs, IPS, and IDS support them natively.
 
-## Related Documents
 
-- [84. Email Authentication (SPF, DKIM, DMARC) & Phishing Defenses](./84-email-authentication-spf-dkim-dmarc-phishing-defenses.md)
-- [86. Wireshark Fundamentals](./86-wireshark-fundamentals.md)
-- [40. Wireshark — Packet Analysis](./40-wireshark-packet-analysis.md)
-- [41. tcpdump — Command-Line Packet Analysis](./41-tcpdump-command-line-packet-analysis.md)
-- [60. Intrusion Detection Systems (IDS) & Snort](./60-intrusion-detection-systems-ids-snort.md)
