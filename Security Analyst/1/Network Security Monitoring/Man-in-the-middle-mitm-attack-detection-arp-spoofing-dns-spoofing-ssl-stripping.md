@@ -206,10 +206,4 @@ This demonstrates how three distinct MITM techniques — ARP spoofing, DNS spoof
 - **DNS spoofing** is most reliably indicated by multiple responses to the same query, replies from an unexpected source, very short TTLs (1–30 seconds), and unsolicited responses — found by filtering for `dns.flags.response == 1 && ip.src != <real-resolver>`; **SSL stripping** shows as an HTTPS request followed by plain HTTP for the same domain, with credentials visible in cleartext in the HTTP stream.
 - The three techniques **chain together** — ARP spoofing positions the attacker, DNS spoofing redirects the victim to the attacker's IP, and SSL stripping downgrades the connection to HTTP so credentials can be captured — each stage building on the position gained by the previous one.
 
-## Related Documents
 
-- [92. Data Exfiltration Detection (DNS, FTP, HTTP, ICMP)](./92-data-exfiltration-detection-dns-ftp-http-icmp.md)
-- [94. Snort In-Depth — IDS/IPS Modes, Parameters & Rule Writing](./94-snort-in-depth-ids-ips-modes-parameters-rule-writing.md)
-- [88. Wireshark Traffic Analysis — Scans, ARP Poisoning, Tunneling & Cleartext Protocols](./88-wireshark-traffic-analysis-scans-arp-poisoning-tunneling-cleartext-protocols.md)
-- [78. The Cyber Kill Chain](./78-the-cyber-kill-chain.md)
-- [4. Address Resolution Protocol (ARP)](./04-address-resolution-protocol-arp.md)
