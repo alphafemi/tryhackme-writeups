@@ -420,9 +420,3 @@ alert ip any any <> any any (msg:"SAME-IP TEST"; sameip; sid:100001; rev:1;)
 - A rule needs an **action** (alert, log, drop, reject), **protocol** (Snort 2 supports only IP, TCP, UDP, ICMP), **IPs and ports** (with ranges, lists, and `!` negation), and a **direction** (`->` or `<>`), plus options: **general** (`msg`, `sid` — user-created at 1,000,000 or above — `reference`, `rev`), **payload** (`content`, `nocase`, `fast_pattern`), and **non-payload** (`id`, `flags`, `dsize`, `sameip`), with custom rules kept in `/etc/snort/rules/local.rules`.
 - Snort's five components are the **Packet Decoder, Pre-processors, Detection Engine, Logging/Alerting,** and **Outputs/Plugins**; rules come in **Community**, **Registered**, and **Subscriber** tiers; and `snort.conf` controls network variables (`HOME_NET`, `EXTERNAL_NET`, `RULE_PATH`), DAQ settings (PCAP, Afpacket, Ipq, Nfq, Ipfw, Dump), output plugins, and rule inclusion — and a working config should never be overwritten directly.
 
-## Related Documents
-
-- [93. Man-in-the-Middle (MITM) Attack Detection — ARP Spoofing, DNS Spoofing & SSL Stripping](./93-man-in-the-middle-mitm-attack-detection-arp-spoofing-dns-spoofing-ssl-stripping.md)
-- [95. Web Application Security Fundamentals](./95-web-application-security-fundamentals.md)
-- [60. Intrusion Detection Systems (IDS) & Snort](./60-intrusion-detection-systems-ids-snort.md)
-- [41. tcpdump — Command-Line Packet Analysis](./41-tcpdump-command-line-packet-analysis.md)
