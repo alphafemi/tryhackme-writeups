@@ -248,9 +248,3 @@ ICMP is a diagnostic/control protocol (ping, TTL exceeded) that's commonly allow
 - **FTP exfiltration** shows as cleartext `USER`/`PASS`, `STOR` uploads, and large transfers to unusual external IPs, with **Follow → TCP Stream** revealing the file contents (in the example, sensitive CSVs sent via a Guest account); **HTTP exfiltration** shows as large POSTs to unknown domains, chunked/multipart uploads, and beaconing, confirmed by correlating Splunk results with Wireshark filters on POST size.
 - **ICMP exfiltration** hides encoded data in echo payloads — a normal ping is roughly 64 bytes (about 74 on the wire), so packets well over 100 bytes (`icmp.type == 8 and frame.len > 100`), especially with regular timing and high-entropy payloads, warrant payload inspection.
 
-## Related Documents
-
-- [91. Network Discovery & Port Scanning Detection](./91-network-discovery-port-scanning-detection.md)
-- [93. Man-in-the-Middle (MITM) Attack Detection — ARP Spoofing, DNS Spoofing & SSL Stripping](./93-man-in-the-middle-mitm-attack-detection-arp-spoofing-dns-spoofing-ssl-stripping.md)
-- [88. Wireshark Traffic Analysis — Scans, ARP Poisoning, Tunneling & Cleartext Protocols](./88-wireshark-traffic-analysis-scans-arp-poisoning-tunneling-cleartext-protocols.md)
-- [74. Splunk Basics](./74-splunk-basics.md)
