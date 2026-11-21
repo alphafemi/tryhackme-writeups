@@ -177,9 +177,3 @@ Even with CDNs, caching, and WAFs in place, attackers look for ways around them:
 - Mitigation layers **application-level defenses** (input validation, CAPTCHA and JavaScript challenges) with **network defenses** — a **CDN** that absorbs most volume at the edge and a **WAF** with rules such as limiting `/login.php` to 5 requests per minute per IP — and major providers have absorbed record attacks, including Google at 398 million requests per second (2023) and Cloudflare at 11.5 Tbps.
 - Attackers look for bypasses even so: **random query parameters** (cache-busting, such as `?a=abcd`) force the origin server to respond, **User-Agent and referrer spoofing** evade WAF pattern rules, and **geographic diversity** dodges geo-based filtering.
 
-## Related Documents
-
-- [97. Web Shell Detection — Logs, Auditd, File System & Network Traffic](./97-web-shell-detection-logs-auditd-file-system-network-traffic.md)
-- [99. Windows Event Logs Deep Dive — Authentication, User Management, Sysmon & PowerShell History](./99-windows-event-logs-deep-dive-authentication-user-management-sysmon-powershell-history.md)
-- [95. Web Application Security Fundamentals](./95-web-application-security-fundamentals.md)
-- [96. Client-Side vs. Server-Side Web Attacks — Detection in Logs, Network Traffic & WAFs](./96-client-side-vs-server-side-web-attacks-detection-in-logs-network-traffic-wafs.md)
