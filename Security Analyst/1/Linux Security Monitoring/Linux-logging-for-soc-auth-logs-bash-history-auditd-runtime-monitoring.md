@@ -265,10 +265,3 @@ Auditd's verbose output is hard to read and awkward to ingest into a SIEM, so ma
 - By default Linux doesn't log **runtime events** (process creation, file changes, network activity); since every action goes through a **system call** that attackers can't realistically bypass, tools monitor a chosen subset of them, and the built-in **auditd** uses rules in `/etc/audit/rules.d/` and is read with **`ausearch -i -k <key>`**, with key fields `pid`/`ppid`, `auid` (original login account), `uid` (account that ran it), `tty`, `exe`, and `key` — balanced against the risk of gigabytes of noise.
 - Because auditd output is verbose and awkward to ingest into a SIEM, teams often use alternatives built on the same principle: **Sysmon for Linux**, **Falco** (containers), **Osquery**, or a commercial **EDR**.
 
-## Related Documents
-
-- [102. Windows Command & Control, Persistence & Impact](./102-windows-command-control-persistence-impact.md)
-- [104. Linux Initial Access — SSH, Exposed Services & Process Tree Detection](./104-linux-initial-access-ssh-exposed-services-process-tree-detection.md)
-- [99. Windows Event Logs Deep Dive — Authentication, User Management, Sysmon & PowerShell History](./99-windows-event-logs-deep-dive-authentication-user-management-sysmon-powershell-history.md)
-- [35. Linux Shells & Bash Scripting](./35-linux-shells-bash-scripting.md)
-- [57. Log Analysis Fundamentals](./57-log-analysis-fundamentals.md)
