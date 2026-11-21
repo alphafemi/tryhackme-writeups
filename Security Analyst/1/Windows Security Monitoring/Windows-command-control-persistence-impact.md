@@ -164,10 +164,3 @@ Active Directory and ransomware are large topics on their own, but every complex
 - Attackers maintain access to add the host to a **botnet** (Kraken), run **long-term espionage** (Volt Typhoon stayed in the US electric grid for nearly a year), or use it as a **network entry point** for a larger breach (one case took 29 days).
 - The worst outcome is **ransomware** across an **Active Directory** network, as in the McLaren hospital incident (743,000 patients, with ransom notes printed on office printers), and the full chain — **Initial Access → Discovery → Collection/Credential Access → Exfiltration → Command and Control → Persistence → Impact** — maps onto MITRE ATT&CK, with earlier interruption (ideally right after Initial Access) giving the better outcome.
 
-## Related Documents
-
-- [101. Windows Post-Exploitation — Discovery, Collection & Ingress Tool Transfer](./101-windows-post-exploitation-discovery-collection-ingress-tool-transfer.md)
-- [103. Linux Logging for SOC — Auth Logs, Bash History & Auditd Runtime Monitoring](./103-linux-logging-for-soc-auth-logs-bash-history-auditd-runtime-monitoring.md)
-- [100. Windows Initial Access — Exposed Services, Phishing & Removable Media](./100-windows-initial-access-exposed-services-phishing-removable-media.md)
-- [99. Windows Event Logs Deep Dive — Authentication, User Management, Sysmon & PowerShell History](./99-windows-event-logs-deep-dive-authentication-user-management-sysmon-powershell-history.md)
-- [80. MITRE ATT&CK, CAR, D3FEND & Related Frameworks](./80-mitre-attck-car-d3fend-related-frameworks.md)
