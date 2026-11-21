@@ -248,10 +248,3 @@ Across the Linux Threat Detection track, the chain mirrors the Windows one: **In
 - **Account persistence** includes new backdoor users (spotted via `useradd` and `usermod` in `auth.log`), **backdoored SSH keys** in `authorized_keys` (monitor file changes, since `echo` is a shell builtin and shows only as `bash`), and **application persistence** such as a WSO web shell, which lives at the application layer and is often invisible to auditd and system logs.
 - **Targeted attacks** use these techniques heavily: one compromised Linux server can be the entry point into an all-Windows network, state groups like **Kimsuky** hide systemd backdoors as a service named `syslogd`, and Linux **ransomware** targets hypervisors so every hosted VM is at risk; the Linux detection chain mirrors the Windows one but maps to auditd, `auth.log`, cron, systemd, and SSH keys.
 
-## Related Documents
-
-- [105. Linux Post-Exploitation — Discovery, Ingress Tool Transfer & the Dota3 Cryptominer Case Study](./105-linux-post-exploitation-discovery-ingress-tool-transfer-dota3-cryptominer-case-study.md)
-- [107. Malware Classification — Categories, Case Studies & Binary vs. Script-Based Threats](./107-malware-classification-categories-case-studies-binary-vs-script-based-threats.md)
-- [104. Linux Initial Access — SSH, Exposed Services & Process Tree Detection](./104-linux-initial-access-ssh-exposed-services-process-tree-detection.md)
-- [102. Windows Command & Control, Persistence & Impact](./102-windows-command-control-persistence-impact.md)
-- [53. Shells — Reverse, Bind & Web Shells](./53-shells-reverse-bind-web-shells.md)
