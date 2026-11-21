@@ -168,9 +168,3 @@ Many WAFs ship with built-in rulesets targeting the **OWASP Top 10**, and levera
 - **WAFs** actively mitigate web attacks by inspecting full requests (including decrypted TLS) and applying **attack-pattern blocking** (e.g., blocking the `sqlmap` User-Agent), **malicious-source denial**, **custom rules** (e.g., allow only GET/POST to `/login`), and **rate-limiting** (e.g., 5 login attempts per minute per IP).
 - WAFs can also **challenge** suspicious requests with a CAPTCHA instead of blocking outright — useful since malicious bots make up roughly 37% of global web traffic — and many ship with **OWASP Top 10** rulesets and threat intelligence feeds of known-malicious IPs and User-Agents.
 
-## Related Documents
-
-- [95. Web Application Security Fundamentals](./95-web-application-security-fundamentals.md)
-- [97. Web Shell Detection — Logs, Auditd, File System & Network Traffic](./97-web-shell-detection-logs-auditd-file-system-network-traffic.md)
-- [88. Wireshark Traffic Analysis — Scans, ARP Poisoning, Tunneling & Cleartext Protocols](./88-wireshark-traffic-analysis-scans-arp-poisoning-tunneling-cleartext-protocols.md)
-- [51. SQL & Database Fundamentals](./51-sql-database-fundamentals.md)
