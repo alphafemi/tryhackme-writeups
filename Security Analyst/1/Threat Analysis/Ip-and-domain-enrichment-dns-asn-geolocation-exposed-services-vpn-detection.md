@@ -147,10 +147,4 @@ A baseline workflow (steps may be skipped/reordered depending on the alert):
 - **Exposed services** (via **Shodan** for open ports and banners, and **Censys** for non-standard ports) reveal a victim's likely entry point or show an attacker's host was itself compromised, and **TLS certificates** (crt.sh, Censys, SSL Shopper) are suspicious when self-signed, brand new, or unusually long-lived.
 - **VPN detection** matters because a normal-looking location proves nothing when VPNs make faking it trivial — **IP2Proxy** and **Spur** label VPN, proxy, and Tor exit nodes, and a match means the apparent geolocation cannot be trusted; the baseline workflow investigates a **domain** (legitimacy, reputation, registration age, resolve to an IP) and then the **IP** (CDN check, reputation, geolocation and VPN check, ASN type).
 
-## Related Documents
 
-- [111. File and Hash Intelligence — Filepath Heuristics, VirusTotal, MalwareBazaar & Sandboxing](./111-file-and-hash-intelligence-filepath-heuristics-virustotal-malwarebazaar-sandboxing.md)
-- [113. SIEM Log Sources in Practice — Sysmon, WinEventLogs, Linux Auth Logs & Web Logs (WINHOST05 Case Study)](./113-siem-log-sources-in-practice-sysmon-wineventlogs-linux-auth-logs-web-logs-winhost05-case-study.md)
-- [110. Cyber Threat Intelligence — Lifecycle, TLP, STIX/TAXII & the CTI Analyst Workflow](./110-cyber-threat-intelligence-lifecycle-tlp-stix-taxii-cti-analyst-workflow.md)
-- [10. Domain Name System (DNS)](./10-domain-name-system-dns.md)
-- [42. Nmap — Network Scanning & Enumeration](./42-nmap-network-scanning-enumeration.md)
