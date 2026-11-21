@@ -206,10 +206,4 @@ Network analysis goes beyond logs by exposing the full data exchanged. Many log-
 - On Linux, **auditd** (e.g., `ausearch -k web_shell`) confirms which user or process created or executed a file, so correlating a suspicious POST in the web logs with an auditd `creat` or `execve` event gives a clearer picture than either source alone, and a **SIEM** centralizes that correlation across log types.
 - **File system analysis** targets default web roots (`/var/www/html/`, `/usr/share/nginx/html/`), upload directories, and `/tmp`, looking for `.php`/`.jsp` files and double extensions (`image.jpg.php`) using `find -newerct` and `grep -r "eval("` — noting that WordPress and Django content lives in a database, not the filesystem — while **network analysis** adds encoded payloads, code in request bodies, unexpected ports, and web server processes spawning command-line tools, with Wireshark filters on `http.request.method`, `http.request.uri contains ".php"`, and `http.user_agent`.
 
-## Related Documents
 
-- [96. Client-Side vs. Server-Side Web Attacks — Detection in Logs, Network Traffic & WAFs](./96-client-side-vs-server-side-web-attacks-detection-in-logs-network-traffic-wafs.md)
-- [98. Denial-of-Service (DoS/DDoS) Attacks — Detection & Mitigation](./98-denial-of-service-dos-ddos-attacks-detection-mitigation.md)
-- [53. Shells — Reverse, Bind & Web Shells](./53-shells-reverse-bind-web-shells.md)
-- [78. The Cyber Kill Chain](./78-the-cyber-kill-chain.md)
-- [62. CyberChef Fundamentals](./62-cyberchef-fundamentals.md)
