@@ -235,10 +235,4 @@ C:\Users\<USER>\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleH
 - **Process monitoring** relies on **4688** (disabled by default, enabled via Group Policy) or **Sysmon Event ID 1** (richer — hash, signature, parent info, Logon ID); the **process launch workbook** reviews uncommon directories, odd names, known-malware hashes, and unexpected parents, then walks up the process tree and traces the attack chain by **Logon ID**, while the **process activities workbook** pivots by **ProcessId** to Sysmon events **3** (network), **22** (DNS), **11** (file create), and **13** (registry set).
 - **PowerShell** commands run inside a session create no new processes, so Sysmon Event ID 1 shows only that `powershell.exe` launched; the per-user **history file** (`ConsoleHost_history.txt` under `PSReadline`) captures the commands entered but not their output or the contents of invoked script files.
 
-## Related Documents
 
-- [98. Denial-of-Service (DoS/DDoS) Attacks — Detection & Mitigation](./98-denial-of-service-dos-ddos-attacks-detection-mitigation.md)
-- [100. Windows Initial Access — Exposed Services, Phishing & Removable Media](./100-windows-initial-access-exposed-services-phishing-removable-media.md)
-- [57. Log Analysis Fundamentals](./57-log-analysis-fundamentals.md)
-- [34. PowerShell Fundamentals](./34-powershell-fundamentals.md)
-- [58. SIEM Fundamentals](./58-siem-fundamentals.md)
