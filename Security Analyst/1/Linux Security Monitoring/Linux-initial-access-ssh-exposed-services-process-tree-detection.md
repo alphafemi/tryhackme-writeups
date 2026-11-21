@@ -196,10 +196,3 @@ Every Initial Access technique in this section can be uncovered through process 
 - **Process tree analysis** is the universal approach: start from a suspicious command, then walk upward with auditd (`ausearch -i -x whoami`, then `--pid` on each parent) until the origin appears (here a Python web app), and list its children with `--ppid` to find `curl http://... | sh` — confirming the breach.
 - **Human-led** Linux attacks (pipe-to-shell installs like `curl ... | bash`, typosquatted packages like `fastpi`) and **supply chain compromises** (the XZ Utils backdoor, the tj-actions secret leak) are rarer but real, and every technique here can be uncovered by tracing a trigger back through its process tree to judge whether the activity is legitimate.
 
-## Related Documents
-
-- [103. Linux Logging for SOC — Auth Logs, Bash History & Auditd Runtime Monitoring](./103-linux-logging-for-soc-auth-logs-bash-history-auditd-runtime-monitoring.md)
-- [105. Linux Post-Exploitation — Discovery, Ingress Tool Transfer & the Dota3 Cryptominer Case Study](./105-linux-post-exploitation-discovery-ingress-tool-transfer-dota3-cryptominer-case-study.md)
-- [100. Windows Initial Access — Exposed Services, Phishing & Removable Media](./100-windows-initial-access-exposed-services-phishing-removable-media.md)
-- [96. Client-Side vs. Server-Side Web Attacks — Detection in Logs, Network Traffic & WAFs](./96-client-side-vs-server-side-web-attacks-detection-in-logs-network-traffic-wafs.md)
-- [39. TLS, SSH, SFTP & VPNs — Secure Communications](./39-tls-ssh-sftp-vpns-secure-communications.md)
