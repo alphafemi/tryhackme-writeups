@@ -191,10 +191,4 @@ While web attacks typically target the application layer rather than the host ma
 - A **CDN** masks the origin server's IP, absorbs DDoS traffic, enforces HTTPS, and often bundles a WAF (Cloudflare, Amazon CloudFront, Azure Front Door), while a **WAF** (cloud-based reverse proxy, host-based, or network-based) detects threats through **signature-based, heuristic-based, anomaly/behavioral,** and **location/IP reputation** methods.
 - **Antivirus** protects endpoints from known malware via signatures and can catch uploaded web shells, but it is only one layer of a broader **defense-in-depth** strategy and should never stand alone.
 
-## Related Documents
 
-- [94. Snort In-Depth — IDS/IPS Modes, Parameters & Rule Writing](./94-snort-in-depth-ids-ips-modes-parameters-rule-writing.md)
-- [96. Client-Side vs. Server-Side Web Attacks — Detection in Logs, Network Traffic & WAFs](./96-client-side-vs-server-side-web-attacks-detection-in-logs-network-traffic-wafs.md)
-- [49. Web Application Fundamentals & HTTP Security Headers](./49-web-application-fundamentals-http-security-headers.md)
-- [13. Web Infrastructure](./13-web-infrastructure.md)
-- [59. Firewall Fundamentals](./59-firewall-fundamentals.md)
