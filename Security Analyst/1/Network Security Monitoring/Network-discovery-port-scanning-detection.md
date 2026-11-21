@@ -181,10 +181,4 @@ Ideally, these known-good scans are **excluded from detection use cases** to red
 - Scan mechanics include the **ping sweep** (ICMP, easily blocked), the **TCP SYN scan** (stealthy, exploits handshake behavior), and the **UDP scan** (slow and unreliable, inferring state from ICMP Port Unreachable replies or timeouts).
 - Exported logs such as Zeek CSVs can be read with tools like `cut`, mindful of embedded commas, and a good SOC practice is to **document and exclude known authorized scans** (source IPs, scan type, schedule) from detection use cases to cut alert noise.
 
-## Related Documents
 
-- [90. Network Perimeter Monitoring & Log Investigation](./90-network-perimeter-monitoring-log-investigation.md)
-- [92. Data Exfiltration Detection (DNS, FTP, HTTP, ICMP)](./92-data-exfiltration-detection-dns-ftp-http-icmp.md)
-- [42. Nmap — Network Scanning & Enumeration](./42-nmap-network-scanning-enumeration.md)
-- [43. Active Reconnaissance Techniques](./43-active-reconnaissance-techniques.md)
-- [88. Wireshark Traffic Analysis — Scans, ARP Poisoning, Tunneling & Cleartext Protocols](./88-wireshark-traffic-analysis-scans-arp-poisoning-tunneling-cleartext-protocols.md)
