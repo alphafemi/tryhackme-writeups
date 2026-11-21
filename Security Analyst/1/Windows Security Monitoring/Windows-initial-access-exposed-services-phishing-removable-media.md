@@ -156,10 +156,3 @@ Because both phishing and USB-based attacks rely on the user launching a binary 
 - A malicious download leaves a clean Sysmon chain — **Event ID 1** (browser launches) → **11** (archive downloaded) → **11** (archive extracted) → **1** (file executed) — while LNK execution leaves little trace, appearing as `explorer.exe` launching PowerShell, so confirm it by finding the earlier file-creation event for the LNK under Downloads.
 - **Removable media** is still an effective, firewall-bypassing vector (Camaro Dragon, Raspberry Robin) via USB "gifts" and infected print shops; infected drives show hidden real files, a malicious `RECOVERY.lnk`, folder-icon binaries like `Photos.exe`, and double-extension copies, and the telltale sign is a process image running from a **non-C: drive letter** (e.g., `E:\malware.exe`).
 
-## Related Documents
-
-- [99. Windows Event Logs Deep Dive — Authentication, User Management, Sysmon & PowerShell History](./99-windows-event-logs-deep-dive-authentication-user-management-sysmon-powershell-history.md)
-- [101. Windows Post-Exploitation — Discovery, Collection & Ingress Tool Transfer](./101-windows-post-exploitation-discovery-collection-ingress-tool-transfer.md)
-- [67. Social Engineering & Human-Targeted Attacks](./67-social-engineering-human-targeted-attacks.md)
-- [81. Email Structure, Protocols & Phishing Analysis](./81-email-structure-protocols-phishing-analysis.md)
-- [80. MITRE ATT&CK, CAR, D3FEND & Related Frameworks](./80-mitre-attck-car-d3fend-related-frameworks.md)
