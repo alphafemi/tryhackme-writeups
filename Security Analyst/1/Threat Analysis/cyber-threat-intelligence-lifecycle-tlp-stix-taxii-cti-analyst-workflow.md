@@ -228,11 +228,4 @@ Sharing intelligence shortens the gap between another organization's incident an
 - The **Traffic Light Protocol** — **CLEAR, GREEN, AMBER, RED** — governs how widely intel may be shared and must travel with every indicator; when two sources conflict, the **stricter label always wins**.
 - **STIX** (a JSON schema for machine-readable threat intel) and **TAXII** (secure APIs for near-real-time exchange via **Collection** or **Channel** models) enable sharing, but not every indicator should be shared — privacy laws, NDAs, competitive concerns, and the risk of tipping off the adversary can all argue against it.
 
-## Related Documents
 
-- [109. Living Off the Land (LoL) Attacks — Abusing Trusted System Tools](./109-living-off-the-land-lol-attacks-abusing-trusted-system-tools.md)
-- [111. File and Hash Intelligence — Filepath Heuristics, VirusTotal, MalwareBazaar & Sandboxing](./111-file-and-hash-intelligence-filepath-heuristics-virustotal-malwarebazaar-sandboxing.md)
-- [77. Pyramid of Pain & Indicators of Compromise](./77-pyramid-of-pain-indicators-of-compromise.md)
-- [80. MITRE ATT&CK, CAR, D3FEND & Related Frameworks](./80-mitre-attck-car-d3fend-related-frameworks.md)
-- [78. The Cyber Kill Chain](./78-the-cyber-kill-chain.md)
-- [61. Vulnerability Management & Scanning](./61-vulnerability-management-scanning.md)
